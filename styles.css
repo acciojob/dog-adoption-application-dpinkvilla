@@ -1,2 +1,51 @@
 
-/* Your CSS Code here. */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+		
+
+        input[type="checkbox"] {
+			
+            margin-bottom: 8px;
+			width:2vw;
+			
+			
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+			margin-left:0%;
+			margin-top:20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+			width: 100px;
+        }
+
+        #submit:hover {
+            background-color: blue;
+        }
