@@ -4,13 +4,81 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+		
+
+        input[type="checkbox"] {
+			
+            margin-bottom: 8px;
+			width:2vw;
+			
+			
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+			margin-left:40%;
+			margin-top:20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+	<form>
+	<label for="name">Name</label>
+	<input type="text" id="name" placeholder="Name" /><br>
+	<label for="phone"> Phone Number</label>
+	<input type="text" id="phone" placeholder="Phone Number" /><br><br>
+	<label for="address"> Address</label>
+	<input type="text" id="address" placeholder="Address" /><br>
+	<input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?"/>
+	<label for="checkbox">Have you ever lived with a Dog before?</label><br>
+	<label for="multiSelect">Please select your preferred breeds</label>
+	<select id="multiSelect" multiple style="height:36px;width:100px">
+		<option>Tea</option>
+		<option>coffee</option>
+		<option>Hot</option>
+	</select>
+	<button id="submit" value="Submit">Submit</button>
+	</form>
+	
 </body>
 
 </html>
